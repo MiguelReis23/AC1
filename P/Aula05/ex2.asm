@@ -26,7 +26,7 @@ while:	bge $t0,$t2,endw	#while(p<lista+SIZE)
 	
 	lw $t1,0($t0)		#$t1=*p
 	li $v0,print_int10
-	move $a0,$t1
+	move $a0,$t0
 	syscall			#print_int10( *p );
 	li $v0,print_str
 	la $a0,str1	
